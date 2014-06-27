@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Pagina Web Mundial Brasil 2014</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+<body background="images/fondoMundial.jpg">
+<table border="1" align="center" class="menu">
+    <tr>
+        <th><a href="lista_equipos.html">Lista de equipos</a></th>
+        <th><a href="calendario_resultados.html">Calendario y Resultados</a></th>
+        <th><a href="tabla_grupos.html">Tabla de grupos</a></th>        
+    </tr>
+    <tr>
+   		<th><a href="goleo_individual.html">Goleo individual</a></th>
+        <th><a href="goleo_equipos.html">Goleo por equipos</a></th>
+        <th><a href="estadisticas.html">Estad&iacutesticas</a></th>
+    </tr>
+    <tr>
+    	<th colspan="3"><a href="noticias.html">Noticias</a></th>
+    </tr>
+    
+    <tr>
+    	<th colspan="3"><a href="capturaResultados.html">Captura de Resultados</a></th>
+    </tr>
+    
+    <tr>
+    	<th ><a href="registroEquipo.html">Registrar Equipo</a></th>
+    </tr>
+    
+    <tr>
+    	<th ><a href="registroJugador.html">Registrar jugador</a></th>
+    </tr>
+       
+</table>
+<div align="center">
+<img width="300px" height="150px" src="images/logoBrasil.jpg">
+</div>
+
+<form method="post" action="">
+	<label for="id_nombre">Nombre</label>
+    <input type="text" id="id_nombre" name="id_nombre" required>
+    <br>
+    
+    <label for="id_foto">Foto</label>
+    <input type="file" id="id_foto" name="id_foto">
+    <br>
+    
+    <label for="id_continente">Continente</label >
+    <select id="id_continente" name="id_continente" required>
+            	<option  value="america">Am&eacute;rica</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="europa">Europa</option>
+                <option value="oceania">Oceania</option>
+     </select>
+     
+     <br>
+     <label for="id_pais">Pa&iacute;s</label >
+      <select id="id_pais" name="id_pais" required>
+            	<option  value="america">Alemania</option>
+                <option value="africa">Argentina</option>
+                <option value="asia">Australia</option>
+                <option value="europa">Belgica</option>
+                <option value="oceania">Bosnia</option>
+                <option  value="america">Braisl</option>
+                <option value="africa">Camerun</option>
+                <option value="asia">Chile</option>
+                <option value="europa">Costa Marfil</option>
+                <option value="oceania">Colombia</option>
+				<option  value="america">Corea</option>
+                <option value="africa">Costa Rica</option>
+                <option value="asia">Croacia</option>
+                <option value="europa">Ecuador</option>
+                <option value="oceania">Espa&ntilde;a</option>
+                <option  value="america">Estados Unidos</option>
+                <option value="africa">Francia</option>
+                <option value="asia">Ghana</option>
+                <option value="europa">Grecia</option>
+                <option value="oceania">Holanda</option>
+             	<option  value="america">Honduras</option>
+                <option value="africa">Inglaterra</option>
+                <option value="asia">Ir&aacute;n</option>
+                <option value="europa">Jap&oacute;n</option>
+                <option value="oceania">M&eacute;xico</option>
+                <option  value="america">Nigeria</option>
+                <option value="africa">Portugal</option>
+                <option value="asia">Rusia</option>
+                <option value="europa">Suiza</option>
+                <option value="oceania">Uruguay</option>
+          </select>
+    <br>
+    <input type="submit" value="Guardar" >
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+body
+{
+	background-image:url(../images/fondoMundial.jpg);
+	/*background-repeat: no repeat;*/
+	background-size:100% auto;
+}
+table th
+{
+	background-color:#C00;
+	color:#FF9;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-align:center;
+	alignment-adjust:central;
+
+}
+
+.caption
+{
+
+	text-align:center;
+	color:#F00;
+	font-size:16px;	
+}
+
+
+
+.renglon_verde_alto /*estilos de clase*/
+{
+	background-color:#090;
+	color:#FFF;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	text-align:center;
+}
+
+.renglon_verde_bajo
+{
+	background-color:#6C0;
+	color:#FFF;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	text-align:center;
+}
+
+.menu
+{
+	border:1px solid #000000;
+}
+
+.menu th
+{
+	border:1px solid #000000;
+	background-color:#36C;
+	padding:0;
+	width:300px;
+}
+
+.menu th a
+{
+	border:1px;
+	color:#FF6;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:24px;
+	text-align:center;
+}
+
+.menu th a:link, a:visited{
+	color:#0F9;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+	text-decoration:none;
+	
+}
+
+.menu th a:hover{
+	background-color:#930;
+	background-color:#303;
+	display:block;
+
+}
+
+.tablaGrupos_alto
+{
+	border:1px;
+	background-color:#F90;
+	color:#000;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+}
+
+.tablaGrupos_bajo
+{
+	border:1px;
+	background-color:#FC6;
+	color:#000;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+}
+
+
+.tablaResultados
+{
+	border:1px;
+	background-color:#006;
+	color:#FFC;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+}
+
+.tablaEstadisticas
+{
+	border:1px;
+	background-color:#309;
+	color:#FFC;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+}
+
+.renglon_over
+{
+	background-color:#300;
+	color:#FFC;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+	
+}
+
+
+/*Tarea
+Terminar página  Brasil 2014
+Instalar Wamp en windows*/
