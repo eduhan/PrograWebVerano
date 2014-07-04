@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<script src="js/jquery.min.js"></script>
+	<script>$(document).ready(
+	function(){
+		alert($('#elemento1').css('fontSize'));
+		alert('Holi :3 ');
+		$('#elemento1').css('fontSize','100px'); //el elemento que tenga id elemento1
+		$('#elemento1').css({'fontSize' : '100px', 'color' : 'red'});
+		$('.titulo').css({'fontSize' : '30px', 'color' : 'blue'});
+		alert($('#elemento1').css('fontSize'));
+		$('#elemento1').hide('slow');
+		$('#elemento1').show('slow');
+		$('#elemento1').click(
+		function(){
+			$(this).hide('slow');
+			$(this).show('slow');
+		}
+		);
+		
+		$('.titulo').click(
+		function(){
+			$(this).hide('slow');
+			$(this).show('slow');
+			$(this).css({'fontSize' : '30px', 'color' : 'green'});
+		}
+		);
+		
+		$('.parrafo').click(
+		function(){
+			$(this).hide('slow');
+			$(this).show('slow');
+			$(this).css({'fontSize' : '200px', 'color' : 'blue'});
+		}
+		);
+		
+		$('#boton').click(
+			function(){
+				//$('#input1').val()+$('#input2').val();
+				a=parseInt($('#input1').val());
+				b=parseInt($('#input2').val());
+				
+				alert(a+b);
+			}
+		);
+		
+		$('#boton2').click(
+			function(){
+				alert($('#input3').val());
+				
+			}
+		);
+		
+		$('.parrafo').css({'fontSize' : '30px', 'color' : 'green'});
+		
+		
+		
+		});
+		
+		
+		
+		//Ahgregar 10 elementos de jQuery
+        </script>
+ </head>
+ 
+ <input type="text" id="input1">
+ <input type="text" id="input2">
+ <button id="boton">Sumar</button>
+ <br>
+ <br>
+ 
+ <input type="text" id="input3">
+ <button id="boton2">Mostrar</button>
+	 <body>
+            <div id="container" class="elemento2">
+                <h1 id="titulo">
+                    <p class="parrafo" id="elemento1">Hola</p>
+                </h1>
+            </div>
+            
+            <div>
+                <h1 class="titulo">Hola</h1>
+                <h2 class="titulo">Hola</h2>
+            </div>
+     </body>
+</html>
