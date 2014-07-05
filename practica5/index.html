@@ -4,6 +4,13 @@
   	<script src="js/jquery.min.js"></script>
 	<script>$(document).ready(
 	function(){
+		
+		
+		
+		
+		
+		
+		
 		alert($('#elemento1').css('fontSize'));
 		alert('Holi :3 ');
 		$('#elemento1').css('fontSize','100px'); //el elemento que tenga id elemento1
@@ -52,11 +59,30 @@
 			}
 		);
 		
-		$('.parrafo').css({'fontSize' : '30px', 'color' : 'green'});
+		//Tarea--------------------------------------------------------------------------------------
+		$('#elemento3').fadeIn(300);// 1.
+		$('#elemento3').css({'fontSize' : '30px', 'color' : 'pink'});// 2.
+		$('#elemento1').css({'fontSize' : '50px', 'color' : 'yellow'}); // 3.
+		$('.titulo').css({ //4.
+        'fontSize' : '+=15px', 
+        'paddingTop' : '+=20px' 
+   		 });
+		 
+		 $('#boton').width('100px'); //5.
+		 $('#boton2').height('100px'); //6.
+		 $('#elemento3').fadeIn(1000);      // 7.
+   		 $('#elemento3').fadeOut('slow');//8.
+		 $('#elemento3').fadeIn(3000);//9.
+		 $('#elemento1').show(300).delay(1000).hide(300).show(300);//10.
+		//-------------------------------------------------------------------------------------------
+		
 		
 		
 		
 		});
+		
+
+		
 		
 		
 		
@@ -75,13 +101,14 @@
 	 <body>
             <div id="container" class="elemento2">
                 <h1 id="titulo">
-                    <p class="parrafo" id="elemento1">Hola</p>
+                    <p class="parrafo" id="elemento1">Holo</p>
                 </h1>
             </div>
             
             <div>
-                <h1 class="titulo">Hola</h1>
+                <h1 class="titulo" id="elemento3">Holi</h1>
                 <h2 class="titulo">Hola</h2>
+                
             </div>
      </body>
 </html>
