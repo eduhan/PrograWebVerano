@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validador</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+    <link rel="stylesheet" href="css/bootstrapValidator.css"/>
+    
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+    
+    
+  </head>
+  <body>
+  
+<div class="container">
+        <div class="row">            
+            <!---------Inicio form----->
+            <div class="col-md-12" > <h1 class="text-center">
+                <span class="glyphicon glyphicon-heart"></span>
+                Revista</h1>
+             </div>
+            
+            <div class="col-md-6">
+                <!-------->
+                
+                <form class="registerForm">
+                <div class="row">
+               			<div class="form-group">
+                            <label class="col-lg-3 control-label">Nombre</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="nombre" placeholder="Nombre" />
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="apellido" placeholder="Apellidos" />
+                            </div>
+                        </div>
+                 </div> <br>
+                 
+                 <div class="row">                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Portada</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="portada" placeholder="Portada" />
+                            </div>
+                        </div> 
+                  </div> <br>
+                  
+                  <div class="row"> 
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Fecha</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="fecha" /> (YYYY/MM/DD)
+                            </div>
+                        </div>
+                  </div> <br>
+                  
+                  <div class="row">                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Volumen</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="volumen" placeholder="Volumen..." />
+                            </div>
+                        </div>
+                   </div> <br>
+                        
+                        
+                   <div class="row">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Titulo</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="titulo" placeholder="Titulo" />
+                            </div>
+                        </div>
+                    </div> <br>
+                    
+                    
+                    <div class="row">    
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Subtitulo</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="subtitulo" placeholder="Subtitulo" />
+                            </div>
+                        </div>  
+                    </div> <br>
+                    
+                    <div class="row">    
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Numero</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="numero" placeholder="Numero" />
+                            </div>
+                        </div>  
+                    </div> <br>
+                    
+                    <div class="row">    
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Clave</label>
+                            <div class="col-lg-4">
+                                <input type="password" class="form-control" name="clave" placeholder="Clave" />
+                            </div>
+                        </div>  
+                    </div>   <br>
+                    
+                    
+                    <div class="row">    
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Directorio</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="directorio" placeholder="Directorio" />
+                            </div>
+                        </div>  
+                    </div>  <br>
+                    
+                    <div class="row">    
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Editorial</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="editorial" placeholder="Editorial" />
+                            </div>
+                        </div>  
+                    </div>  <br>   
+                    
+                    
+                    <div class="row">    
+                        <div class="form-group">
+                            <label for="idStatus" class="col-lg-3 control-label">Id Status </label>
+                              <button class="btn btn-default dropdown-toggle" type="button" id="idStatus" name="idStatus" 		                                  data-toggle="dropdown">
+                                Id Status
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5</a></li>
+                              </ul>
+                        </div>  
+                    </div>           
+                </form>
+                <!-------->
+                
+            </div>
+        </div>
+</div>
+            
+ 
+    
+    
+    <script type="text/javascript">
+	
+	$(document).ready(function(){
+    $('.registerForm').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            nombre:
+			{
+                message: 'Nombre no valido',
+                validators:
+				{
+                    notEmpty:
+					{
+                        message: 'El nombre no puede estar vacio'
+                    },
+                    stringLength:
+					{
+                        min: 6,
+                        max: 500,
+                        message: 'El nombre debe tener minimo 6 caracteres y maximo 500'
+                    },
+                    regexp:
+					{
+                        regexp: /^[a-zA-Z_]+$/,
+                        message: 'El nombre solo puede contener letras, no numeros'
+                    }
+                }
+            },
+			//--------------------------------------------------------------------------------------
+			apellido: {
+                validators: {
+                    notEmpty: {
+                        message: 'El apellido no puede estar vacio'
+                    }
+                }
+            },
+			
+			//--------------------------------------------------------------------------------------
+			portada:
+			{
+                message: 'Portada invalida',
+                validators:
+				{
+                    notEmpty:
+					{
+                        message: 'El campo de portada no puede estar vacio'
+                    },
+                    stringLength:
+					{
+                        min: 1,
+                        max: 100,
+                        message: 'La portada debe tener una longitud de entre 1 y 100 caracteres'
+                    },
+                    regexp:
+					{
+                        regexp: /^[a-zA-Z_]+$/,
+                        message: 'La portada solo puede contener letras, no numeros'
+                    }
+                }
+            },
+			//--------------------------------------------------------------------------------------
+			 fecha: {
+                validators: {
+                    date: {
+                        format: 'YYYY/MM/DD',
+                        message: 'The birthday is not valid'
+                    }
+                }
+            },
+			
+			//---------------------------------------------------------------------------------------
+			volumen: {
+                validators: {
+                    notEmpty: {
+                        message: 'El volumen no puede estar vacio'
+                    }
+                }
+            },
+			//---------------------------------------------------------------------------------------
+			titulo: {
+                validators: {
+                    notEmpty: {
+                        message: 'El titulo no puede estar vacio'
+                    }
+                }
+            },
+			//---------------------------------------------------------------------------------------
+			subtitulo: {
+                validators: {
+                    notEmpty: {
+                        message: 'El subtitulo no puede estar vacio'
+                    }
+                }
+            },
+			//---------------------------------------------------------------------------------------
+			numero: {
+                validators: {
+                    notEmpty: {
+                        message: 'El numero no puede estar vacio'
+                    },
+					regexp:
+					{
+                        regexp: /^[0-9]+$/,
+                        message: 'El numero solo puede contener numeros'
+                    }
+					
+                }
+            },
+			//---------------------------------------------------------------------------------------
+			clave: {
+                validators: {
+                    notEmpty: {
+                        message: 'La clave no puede estar vacia'
+                    }
+                }
+            },
+			//---------------------------------------------------------------------------------------
+			directorio: {
+                validators: {
+                    notEmpty: {
+                        message: 'El directorio no puede estar vacio'
+                    }
+                }
+            },
+			//---------------------------------------------------------------------------------------
+			editorial: {
+                validators: {
+                    notEmpty: {
+                        message: 'La editorial no puede estar vacia'
+                    }
+                }
+            },
+			//---------------------------------------------------------------------------------------
+			idStatus: {
+                validators: {
+                    notEmpty: {
+                        message: 'El estatus no puede estar vacio'
+                    }
+                }
+            },
+			
+			
+			
+			
+			
+			
+        }
+    });
+});
+	
+	</script>
+  </body>
+</html>
